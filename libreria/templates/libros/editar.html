@@ -4,22 +4,17 @@
 
 {% block contenido %}
 
-    <form method="post" class="mt-4">
-    
-        <div class="mb-3">
-            <label for="titulo" class="form-label">Título</label>
-            <input type="text" class="form-control" id="titulo" value="Aprende Django">
-        </div>
-        <div class="mb-3">
-            <label for="imagen" class="form-label">Imágen</label>
-            <input type="file" accept="image/*" class="form-control" id="imagen" value="django.png">
-        </div>
-        <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripción</label>
-            <input type="text" class="form-control" id="descripcion" value="Libro que explica todo sobre el framework Django">
-        </div>
-        <button type="submit" class="btn btn-primary">Editar</button>
-
-    </form>
+<div class="card">
+    <div class="card-header">
+        Editar Información del Libro
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del Libro</h4>
+        {% include 'libros/formulario.html' %}
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
 
 {% endblock %}
