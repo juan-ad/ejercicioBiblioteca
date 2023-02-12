@@ -6,6 +6,4 @@
 2. python manage.py migrate
 
 -------- Administrador Django -------
-Pimero crear el usuario y luego registrar los modelos
-1. python admin.py changed, reloading.
 2. python manage.py createsuperuser
