@@ -32,13 +32,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'libreria',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'libreria'
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +126,5 @@ MEDIA_RUT = os.path.join(BASE_DIR, '')
 MEDIA_URL = '/imagenes/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/'

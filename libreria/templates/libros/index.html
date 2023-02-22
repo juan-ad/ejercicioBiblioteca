@@ -31,8 +31,8 @@
                             </td>
                             <td>{{libro.descripcion}}</td>
                             <td>
-                                <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>
-                                <a name="" id="" class="btn btn-info" href="{% url 'delete' libro.id %}" role="button">Borrar</a>
+                                <a name="" id="" class="btn btn-info" href="{% url 'editar' libro.id %}" role="button">Editar</a>
+                                <a name="" id="" class="btn btn-info" href="{% url 'borrar' libro.id %}" role="button">Borrar</a>
                             </td>
                         </tr>
                         {% endfor %}
